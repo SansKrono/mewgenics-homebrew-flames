@@ -1,3 +1,13 @@
+STARTER_PLACEHOLDER_Berserker {
+    template placeholder
+    
+    meta {
+        name "ABILITY_STARTER_PLACEHOLDER_NAME"
+        desc "o,_ o"
+        class Berserker
+    }
+}
+
 BasicMeleeBerserker { 
     template melee_attack
 

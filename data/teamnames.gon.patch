@@ -1,8 +1,10 @@
-Testy.merge {
+Berserker.merge {
    adjectives [
-      "Enraged""Fiery""The Flame"
+      "Enraged"
+      "Fiery"
    ]
    nouns [
-      "Ragers""Flames"
+      "Ragers"
+      "Flames"
    ]
 }
