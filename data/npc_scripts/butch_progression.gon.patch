@@ -1,7 +1,0 @@
-sequences {
-   butch_begin_accepting_cats.overwrite {
-		dialog "take this"
-      unlock_class Berserker
-		begin_accepting_cats butch
-	}
-}
