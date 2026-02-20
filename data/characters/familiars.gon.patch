@@ -1,0 +1,12 @@
+CharmedMyLittleFriend.merge {
+    variant_of MyLittleFriend
+
+    properties {
+        faction allies
+        inherit_faction true
+    }
+
+    ai {
+        brain PlayerBrain // you can control it if its a PlayerBrain. This is normally reserved for familiars instead of charmed enemies but I don't care
+    }
+}

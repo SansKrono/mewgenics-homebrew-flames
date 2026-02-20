@@ -1,0 +1,14 @@
+CinderRing.merge {
+    name "Cinder Ring"
+    desc "A warm ring that fuels magical energy and resists fire."
+    rarity uncommon
+    kind trinket
+    frame 100
+
+    int 1
+
+    passives {
+        AddManaRegen 1
+        StatusImmunity Burn
+    }
+}

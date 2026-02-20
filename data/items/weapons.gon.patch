@@ -1,4 +1,4 @@
-EmberBlade {
+EmberBlade.merge {
     name "Ember Blade"
     desc "A blade forged in flame. Burns foes on contact."
     rarity uncommon
@@ -15,20 +15,5 @@ EmberBlade {
         AddStatusToBasicAttack {
             Burn 1
         }
-    }
-}
-
-CinderRing {
-    name "Cinder Ring"
-    desc "A warm ring that fuels magical energy and resists fire."
-    rarity uncommon
-    kind trinket
-    frame 100
-
-    int 1
-
-    passives {
-        AddManaRegen 1
-        StatusImmunity Burn
     }
 }

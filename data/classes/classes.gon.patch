@@ -1,0 +1,67 @@
+Berserker.merge {
+    meta {
+        name "Berserker"
+        description "A rage-fueled warrior that trades intelligence for raw power and fiery skills."
+    }
+
+    innate_items {
+        weapon EmberBlade
+        trinket CinderRing 
+    }
+
+    graphics {
+        palette 54
+
+        alt_animations [
+            [idle, FighterIdle]
+            [ClassToNeutral,   FighterToNeutral]
+            [ClassFromNeutral, FighterFromNeutral]
+            [StartTurn, FighterStartTurn]
+            [Victory, fighterVictory]
+        ]
+    }
+
+    attack_pool [
+        BasicMelee_Berserker
+    ]
+
+    ability_pool [
+       FlameDash
+       EmberSwipe
+       InfernoStrike
+       Firestorm
+    ]
+
+    complicated_abilities [
+       InfernoStrike
+       Firestorm
+    ]
+
+    starter_abilities [  
+        FlameDash
+        EmberSwipe
+    ]
+
+    ability_groups {
+        attack [ EmberSwipe InfernoStrike ]
+        move [ FlameDash ] 
+        misc [ Firestorm ] 
+    }
+    
+    passive_pool [
+        Pyromaniac
+        LivingBomb
+    ]
+
+    complicated_passives [
+       LivingBomb
+    ]
+
+    stat_mods {
+        str 3
+        con 1
+        int -2
+    }
+
+    levelup_stats [str con spd]
+}

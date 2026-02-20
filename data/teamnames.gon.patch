@@ -1,0 +1,11 @@
+Testy.merge {
+   adjectives [
+    "Tested"
+    "Tester"
+    "The Test"
+   ]
+   nouns [
+    "Testies"
+    "Test"
+   ] 
+}

@@ -1,0 +1,12 @@
+general_!autorarity.append [
+    EmberBlade
+    CinderRing
+]
+
+weapons.append [
+    EmberBlade
+]
+
+trinkets.append [
+    CinderRing
+]
