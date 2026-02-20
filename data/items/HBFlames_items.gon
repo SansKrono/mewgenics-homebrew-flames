@@ -1,0 +1,34 @@
+EmberBlade {
+    name "Ember Blade"
+    desc "A blade forged in flame. Burns foes on contact."
+    rarity uncommon
+    kind weapon
+    frame 50
+    durability [
+        6 10
+    ]
+    set Molten
+
+    ability wp_GlassShard
+
+    passives {
+        AddStatusToBasicAttack {
+            Burn 1
+        }
+    }
+}
+
+CinderRing {
+    name "Cinder Ring"
+    desc "A warm ring that fuels magical energy and resists fire."
+    rarity uncommon
+    kind trinket
+    frame 100
+
+    int 1
+
+    passives {
+        AddManaRegen 1
+        StatusImmunity Burn
+    }
+}

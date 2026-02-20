@@ -1,0 +1,32 @@
+// Starter Mod: Custom Mutations
+// Two new mutations: Magma Eyes and Iron Shell body
+
+eyes {
+    // Magma Eyes — fire-element basic attacks + burn on hit
+    // Using a high ID (1100+) to avoid colliding with existing mutations
+    1100 {
+        desc "Eyes of molten fire. Basic attacks burn and deal fire damage."
+        passives {
+            AddStatusToBasicAttack {
+                Burn 1
+            }
+            AddElementsToBasicAttack Fire
+        }
+    }
+}
+
+body {
+    // Iron Shell — high defense at the cost of speed
+    // Using a high ID (1100+) to avoid colliding with existing mutations
+    1100 {
+        desc "A thick metallic shell. Reduces incoming damage but slows movement."
+        con 2
+        spd -1
+        shield 3
+
+        passives {
+            Brace 1
+            Metal 1
+        }
+    }
+}

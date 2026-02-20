@@ -1,0 +1,78 @@
+// Starter Mod: Custom Class - Berserker
+// A rage-focused melee class that trades intelligence for raw power
+// Uses existing Fighter abilities to keep things simple
+
+Berserker {
+    meta {
+        name "Berserker"
+        description "A rage-fueled warrior that grows stronger as the fight drags on"
+    }
+
+    graphics {
+        palette 54
+
+        alt_animations [
+            [idle, FighterIdle
+            ]
+            [ClassToNeutral, FighterToNeutral
+            ]
+            [ClassFromNeutral, FighterFromNeutral
+            ]
+            [StartTurn, FighterStartTurn
+            ]
+            [Victory, fighterVictory
+            ]
+        ]
+    }
+    // Re-use existing Fighter attacks
+    attack_pool [
+        BasicMelee_Fighter
+    ]
+    // Small curated ability pool from existing abilities
+    ability_pool [
+        Spin
+        Dash
+        FurySwipes
+        FirePunch
+        Uppercut
+        Enrage
+        FighterLeap
+        Counter
+    ]
+
+    starter_abilities [
+        FurySwipes
+        Dash
+        Spin
+        Enrage
+    ]
+
+    ability_groups {
+        attack [Spin, FurySwipes, FirePunch, Uppercut
+        ]
+        defense [Counter
+        ]
+        move [Dash, FighterLeap
+        ]
+        misc [Enrage
+        ]
+    }
+    // Re-use existing Fighter passives
+    passive_pool [
+        BloodLust
+        Avenger
+        FasterWhenHit
+        KillsHeal
+        Vengeful
+        WeaponMaster
+    ]
+    // High strength, low intelligence
+    stat_mods {
+        str 3
+        con 1
+        int -2
+    }
+
+    levelup_stats [str con spd
+    ]
+}
