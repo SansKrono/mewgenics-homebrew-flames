@@ -1,11 +1,8 @@
 Testy.merge {
    adjectives [
-    "Tested"
-    "Tester"
-    "The Test"
+      "Enraged""Fiery""The Flame"
    ]
    nouns [
-    "Testies"
-    "Test"
-   ] 
+      "Ragers""Flames"
+   ]
 }
