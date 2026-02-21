@@ -1,55 +1,55 @@
 //COMMON BIRDS
 blackbird_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 pigeon_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 chicken_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 
 //UNCOMMON BIRDS
 dove_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 seagull_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 turkey_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 
 //RARE BIRDS
 hummingbird_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 raven_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 eagle_pool.append [
-	EmberBlade 1
-    CinderRing 1
+	SpringShoes 1
+    LuckyCoin 1
 ]
 
 //VERY RARE BIRDS
 cherub_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 mutant_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }
 harpy_pool.merge {
-	EmberBlade .5
-    CinderRing .5
+	SpringShoes .5
+    LuckyCoin .5
 }

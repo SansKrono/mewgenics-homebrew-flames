@@ -1,14 +1,14 @@
-CinderRing.merge {
-    name "Cinder Ring"
-    desc "A warm ring that fuels magical energy and resists fire."
+LuckyCoin.merge {
+    name "Lucky Coin"
+    desc "A shiny coin that seems to give you an extra skip in your step."
     rarity uncommon
     kind trinket
     frame 100
 
-    int 1
-
+    spd 1
+    
     passives {
-        AddManaRegen 1
-        StatusImmunity Burn
+        AddMovement 2
     }
 }
+

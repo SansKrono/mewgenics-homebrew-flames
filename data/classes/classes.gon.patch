@@ -1,16 +1,16 @@
-Berserker.merge {
+Acrobat.merge {
     meta {
-        name "Berserker"
-        description "A rage-fueled warrior that trades intelligence for raw power and fiery skills."
+        name "Acrobat"
+        description "A highly mobile warrior that bounces, leaps, and uses their momentum against enemies."
     }
 
     innate_items {
-        weapon EmberBlade
-        trinket CinderRing 
+        weapon SpringShoes
+        trinket LuckyCoin 
     }
 
     graphics {
-        palette 54
+        palette 52
 
         alt_animations [
             [idle, FighterIdle]
@@ -22,46 +22,50 @@ Berserker.merge {
     }
 
     attack_pool [
-        BasicMelee_Berserker
+        BasicMelee_Acrobat
     ]
 
     ability_pool [
-       FlameDash
-       EmberSwipe
-       InfernoStrike
-       Firestorm
+       AcrobatLeap
+       AcrobatBounce
+       AcrobatSpring
+       AcrobatDive
+       AcrobatKick
+       AcrobatDash
     ]
 
     complicated_abilities [
-       InfernoStrike
-       Firestorm
+       AcrobatDive
+       AcrobatBounce
     ]
 
     starter_abilities [  
-        FlameDash
-        EmberSwipe
+        AcrobatLeap
+        AcrobatSpring
     ]
 
     ability_groups {
-        attack [ EmberSwipe InfernoStrike ]
-        move [ FlameDash ] 
-        misc [ Firestorm ] 
+        attack [ AcrobatDive AcrobatKick ]
+        move [ AcrobatLeap AcrobatBounce AcrobatSpring AcrobatDash ] 
+        misc [ ] 
     }
     
     passive_pool [
-        Pyromaniac
-        LivingBomb
+        Passive_Acrobatics
+        Passive_Lightfoot
+        Passive_SpringHeel
     ]
 
     complicated_passives [
-       LivingBomb
+       Passive_SpringHeel
     ]
 
     stat_mods {
-        str 3
+        str 1
         con 1
-        int -2
+        int 1
+        spd 2
     }
 
-    levelup_stats [str con spd]
+    levelup_stats [str spd spd]
 }

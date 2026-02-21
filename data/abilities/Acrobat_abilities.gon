@@ -1,0 +1,247 @@
+STARTER_PLACEHOLDER_Acrobat {
+    template placeholder
+
+    meta {
+        name "ABILITY_STARTER_PLACEHOLDER_NAME"
+        desc "Used as a base for standard melee attacks so character gets the matching class specific icon."
+        class Acrobat
+    }
+}
+
+BasicMeleeAcrobat { 
+    template jump_attack
+    
+    meta {
+        name "ABILITY_BASICMELEE_NAME"
+        desc "ABILITY_BASICMELEE_DESC"
+        class Acrobat
+        type_icon "movement"
+    }
+
+    graphics {
+        jump_attack_animation land
+    }
+
+    target {
+        max_range 4
+        aoe_mode cross
+    }
+
+    damage_instance {
+        damage 4+bonus_melee_ability_damage
+        makes_contact true
+    }
+}
+
+BasicMelee_Acrobat {
+    variant_of BasicMeleeAcrobat
+    
+    meta {
+        class Acrobat
+    }
+}
+
+AcrobatLeap {
+    template teleport_strike
+
+    meta {
+        name "Acrobat Leap"
+        desc "A basic jump attack."
+        class Acrobat
+        type_icon "movement"
+    }
+
+    graphics {
+        jump_attack_animation land
+    }
+    
+    cost {
+        infcantrip true
+        mana 5
+    }
+
+    target {
+        max_range 4
+    }
+
+    damage_instance {
+        damage 6+bonus_melee_ability_damage
+        makes_contact true
+    }
+}
+
+AcrobatBounce {
+    template jump_attack
+    
+    meta {
+        name "Bounce"
+        desc "Jump into a group of enemies, bouncing and damaging all adjacent targets."
+        class Acrobat
+        type_icon "movement"
+    }
+
+    graphics {
+        jump_attack_animation land
+    }
+
+    cost {
+        infcantrip true
+        mana 8
+    }
+
+    target {
+        max_range 5
+        aoe_mode cross
+    }
+
+    damage_instance {
+        damage 4+bonus_melee_ability_damage
+        makes_contact true
+    }
+}
+
+ClearTheRoom {
+    template jump_attack
+    
+    meta {
+        name "Clear The Room"
+        desc "Jump into a group of enemies, bouncing and damaging all adjacent targets."
+        class Acrobat
+        type_icon "movement"
+    }
+
+    graphics {
+        jump_attack_animation land
+    }
+
+    cost {
+        infcantrip true
+        mana 4
+    }
+
+    target {
+        max_range 4
+        aoe_mode cross
+    }
+
+    damage_instance {
+        damage 4+bonus_melee_ability_damage
+        makes_contact true
+    }
+}
+
+AcrobatSpring {
+    template jump_attack
+
+    meta {
+        name "Spring"
+        desc "A short hop that costs very little, granting a burst of speed upon landing."
+        class Acrobat
+        type_icon "movement"
+    }
+
+    graphics {
+        jump_attack_animation land
+    }
+
+    cost {
+        infcantrip true
+        mana 3
+    }
+
+    target {
+        max_range 3
+    }
+
+    damage_instance {
+        damage 1+bonus_melee_ability_damage
+        makes_contact true
+
+        effects {
+            SpeedUp 1
+        }
+    }
+}
+
+AcrobatDive {
+    template jump_attack
+
+    meta {
+        name "Divebomb"
+        desc "A focused, long-range dive that deals heavy damage."
+        class Acrobat
+        type_icon "attack"
+    }
+
+    graphics {
+        jump_attack_animation land
+    }
+
+    cost {
+        mana 12
+    }
+
+    target {
+        min_range 3
+        max_range 8
+    }
+
+    damage_instance {
+        damage 12+bonus_melee_ability_damage
+        makes_contact true
+    }
+}
+
+AcrobatKick {
+    template melee_attack
+    
+    meta {
+        name "Dropkick"
+        desc "A powerful kick that launches an enemy backward."
+        class Acrobat
+        type_icon "melee"
+    }
+
+    cost {
+        infcantrip true
+        mana 6
+    }
+
+    damage_instance {
+        damage 8+bonus_melee_ability_damage
+        knockback 4
+        makes_contact true
+    }
+}
+
+AcrobatDash {
+    template dash_attack
+    
+    meta {
+        name "Acrobat Dash"
+        desc "Dash forward through enemies."
+        class Acrobat
+        type_icon "movement"
+    }
+    
+    graphics {
+        dash_start_animation dashstart
+        dash_animation dash
+        dash_attack_animation dashatk
+    }
+
+    cost {
+        infcantrip true
+        mana 6
+    }
+    
+    target {
+        max_range 4
+    }
+    
+    damage_instance {
+        damage 5+bonus_melee_ability_damage
+        knockback 1
+    }
+}
+

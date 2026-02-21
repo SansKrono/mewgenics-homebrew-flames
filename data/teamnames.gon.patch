@@ -1,10 +1,10 @@
-Berserker.merge {
+Acrobat.merge {
    adjectives [
-      "Enraged"
-      "Fiery"
+      "Agile"
+      "Bouncing"
    ]
    nouns [
-      "Ragers"
-      "Flames"
+      "Jumpers"
+      "Leapers"
    ]
 }

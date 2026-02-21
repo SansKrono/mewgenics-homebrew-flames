@@ -1,0 +1,44 @@
+Passive_Acrobatics {
+    meta {
+        name "Acrobatics"
+        desc "Gain +1 damage to your next attack for every tile moved this turn."
+        class Acrobat
+    }
+
+    damage_instance {
+        // Need to find out if there is a distance moved stat hook
+        effects {
+            StrengthUp 1
+        }
+    }
+}
+
+Passive_Lightfoot {
+    meta {
+        name "Lightfoot"
+        desc "Start each combat encounter with an extra movement point."
+        class Acrobat
+    }
+
+    damage_instance {
+        effects {
+            RefreshMovePoints 1
+        }
+    }
+}
+
+Passive_SpringHeel {
+    meta {
+        name "Spring Heeled"
+        desc "Landing a jump attack has a 20% chance to immediately refresh your action points."
+        class Acrobat
+    }
+
+    // Trigger on land hook needed
+    damage_instance {
+        effects {
+            RefreshActPoints 1
+        }
+    }
+}
+

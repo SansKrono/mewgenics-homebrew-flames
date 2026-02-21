@@ -1,25 +1,19 @@
 eyes.merge {
     1100 {
-        desc "Eyes of molten fire. Basic attacks burn and deal fire damage."
+        desc "Large, springy peepers. You can see further and jump further."
         passives {
-            AddStatusToBasicAttack {
-                Burn 1
-            }
-            AddElementsToBasicAttack Fire
+            AddMovement 1
         }
     }
 }
 
 body.merge {
     1100 {
-        desc "A thick metallic shell. Reduces incoming damage but slows movement."
-        con 2
-        spd -1
-        shield 3
+        desc "Incredibly powerful hind legs. Gain increased speed and jump attacks deal extra damage."
+        spd 1
 
         passives {
-            Brace 1
-            Metal 1
+            IncreaseJumpDamage 2
         }
     }
 }

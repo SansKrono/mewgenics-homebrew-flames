@@ -1,19 +1,15 @@
-EmberBlade.merge {
-    name "Ember Blade"
-    desc "A blade forged in flame. Burns foes on contact."
+SpringShoes.merge {
+    name "Spring Shoes"
+    desc "Shoes fitted with coiled springs. Perfect for jumping."
     rarity uncommon
     kind weapon
     frame 50
     durability [
         6 10
     ]
-    set Molten
-
-    ability wp_GlassShard
 
     passives {
-        AddStatusToBasicAttack {
-            Burn 1
-        }
+        AddMovement 1
     }
 }
+
