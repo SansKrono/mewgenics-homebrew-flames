@@ -1,0 +1,61 @@
+Pyromaniac {
+    name "Pyromaniac"
+    desc "Fire attacks heal you and grow stronger over time"
+    class Berserker
+
+    1 {
+        passives {
+            AddStatusToBasicAttack {
+                Burn 1
+            }
+            KillsHeal 3
+        }
+    }
+    2 {
+        desc "Fire attacks heal more, and kills grant a burst of speed"
+        passives {
+            AddStatusToBasicAttack {
+                Burn 2
+            }
+            KillsHeal 8
+            StatusOnKill {
+                SpeedUp 2
+                StrengthUp 1
+            }
+        }
+    }
+}
+
+LivingBomb {
+    name "Living Bomb"
+    desc "Hitting burning enemies triggers explosive damage"
+    class Berserker
+
+    1 {
+        icon FireBlastSmall
+        
+        passives {
+            AddStatusToBasicAttack {
+                Burn 1
+            }
+            // Trigger explosion on hit logic (simplified to represent concept)
+            StatusOnKill {
+                Burn 2
+            }
+        }
+    }
+
+    2 {
+        icon FireBlastMedium
+        desc "Hitting burning enemies triggers huge explosive damage"
+
+        passives {
+             AddStatusToBasicAttack {
+                Burn 2
+            }
+            StatusOnKill {
+                Burn 4
+            }
+        }
+    }
+}
